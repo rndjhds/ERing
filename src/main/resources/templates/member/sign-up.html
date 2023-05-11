@@ -4,18 +4,21 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        html{
+        html {
             padding-bottom: 80px;
         }
-        body{
+
+        body {
             background-color: rgb(228, 241, 255);
         }
-        header>h1{
+
+        header > h1 {
             font-size: 4rem;
             text-align: center;
             color: rgb(35, 160, 255);
         }
-        main{
+
+        main {
             border: 5px solid rgb(35, 160, 255);
             border-radius: 60px;
             width: 700px;
@@ -23,28 +26,34 @@
             margin-right: auto;
             margin-bottom: 30px;
         }
-        ul{
+
+        ul {
             list-style: none;
             padding-bottom: 25px;
             padding-left: 0%;
         }
-        li{
+
+        li {
             padding-bottom: 25px;
         }
-        .idpwd{
+
+        .idpwd {
             text-align: center;
             margin-bottom: 50px;
             padding-top: 25px;
         }
-        .information{
+
+        .information {
             text-align: center;
             margin-bottom: 50px;
         }
-        .numbering{
+
+        .numbering {
             text-align: center;
             margin-bottom: 10px;
         }
-        footer{
+
+        footer {
             margin-top: 70px;
         }
     </style>
@@ -53,7 +62,7 @@
 <header>
     <h1>E'Ring</h1>
 </header>
-<form method="post">
+<form method="post" action="/signUp">
     <main>
         <div>
             <p>
@@ -64,7 +73,6 @@
                 <li>
                     비밀번호<br><input type="password" name="pwd" style="width: 400px; height: 30px;">
                 </li>
-                <li>
                     비밀번호 재확인<br><input type="password" name="pwdcheck" style="width: 400px; height: 30px;">
                 </li>
             </ul>
@@ -76,12 +84,14 @@
                 </li>
                 <li>
                     생년월일<br>
-                    <input type="date" name="date" placeholder="월일" style="width: 400px; height: 30px;">
+                    <input type="date" name="birthday" placeholder="월일" style="width: 400px; height: 30px;">
                 </li>
                 <li>
                     성별<br>
                     <select name="gender" style="width: 400px; height: 30px;">
-                        <option>남자</option><option>여자</option><option>선택안함</option>
+                        <option>남자</option>
+                        <option>여자</option>
+                        <option>선택안함</option>
                     </select>
                 </li>
                 <li>
@@ -94,24 +104,18 @@
             <ul class="numbering">
                 <li>
                     휴대전화<br>
-                    <select style="width: 80x; height: 30px;">
-                        <option>대한민국 +82</option>
-                    </select>
-
-                    <input type="number" name="number" placeholder="전화번호만 입력" style="width: 295px; height: 30px;">
+                    <input type="number" name="telno" placeholder="전화번호만 입력" style="width: 400px; height: 30px;">
                 </li>
             </ul>
             </p>
         </div>
     </main>
 
-    <footer>
-
-        <input type="button" name="button" value="가입하기"
+        <input type="submit" name="button" value="가입하기"
                style="width: 300px; height: 50px; background-color:rgb(35, 160, 255);
                             color:white; font-size: 20px; border: 0px; margin-left: 41%; display:block;">
 
-    </footer>
+
 </form>
 </body>
 </html>
