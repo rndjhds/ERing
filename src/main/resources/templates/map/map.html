@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+          crossorigin="anonymous">
+    <style>
+        div.container {
+            padding-left: 220px;
+        }
+
+        h1 {
+            font-size: 7rem;
+            text-align: center;
+        }
+
+        .searchtext {
+            font-size: 20px;
+            text-align: center;
+            padding-top: 45px;
+            color: rgb(62, 151, 219);
+        }
+
+        .searchbar {
+            width: 600px;
+            border: 2px;
+            border-radius: 2em;
+        }
+
+        .headerbar {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .headermain {
+            border: 3px solid #0d6efd;
+            border-radius: 35px;
+            display: inline-block;
+            width: 510px;
+            height: 0px;
+            padding-top: 10px;
+            padding-bottom: 55px;
+        }
+
+        .searchbar {
+            width: 460px;
+            height: 40px;
+            padding-top: 5px;
+            border-style: none;
+        }
+
+        .searchbar:focus {
+            outline: none;
+        }
+
+        .button {
+            background-image: url(https://fonts.gstatic.com/s/i/googlematerialicons/search/v16/gm_grey-24dp/2x/gm_search_gm_grey_24dp.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 30px;
+            border-style: none;
+            border-radius: 50px;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header class="d-flex justify-content-center py-3">
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a href="#" class="nav-link">홈
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">소개</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">원격지원</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">게시판</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">고객센터</a>
+            </li>
+        </ul>
+        <div class="col-md-3 text-end">
+            <button type="button" class="btn btn-outline-primary me-2">
+                프로필
+            </button>
+            <button type="button" class="btn btn-primary">
+                로그아웃
+            </button>
+        </div>
+    </header>
+</div>
+<main>
+    <form method="post">
+        <div class="headerbar">
+            <div class="headermain">
+                <input name="search" class="searchbar" type="search" placeholder="찾고자 하는곳을 검색해 보세요">
+                <input class="button" type="submitF">
+            </div>
+        </div>
+    </form>
+</main>
+<div class="map">
+
+</div>
+</body>
+</html>
